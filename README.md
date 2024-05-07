@@ -1,10 +1,8 @@
 # NeoVim Config
 
-https://github.com/neovim/neovim
+Repositório Neovim |> https://github.com/neovim/neovim
 
-## Dependências
-
-- https://github.com/BurntSushi/ripgrep
+Lista de configurações e dependências |> https://github.com/nvim-lua/kickstart.nvim
 
 ## Pacotes
 

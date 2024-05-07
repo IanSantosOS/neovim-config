@@ -1,6 +1,3 @@
-return {}
---[[ TODO: consertar a configuração
-
 return {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
@@ -18,4 +15,3 @@ return {
         })
     end
 }
-]]

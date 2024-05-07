@@ -29,9 +29,15 @@ Linux:
 
 ## Referências
 
+### Typecraft
+
+https://github.com/cpow/neovim-for-newbs
+
 - [Playlist | Neovim for Newbs. FREE NEOVIM COURSE](https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn)
 
-**Theprimeagen** |> [Repositório](https://github.com/ThePrimeagen/init.lua)
+### Theprimeagen
+
+https://github.com/ThePrimeagen/init.lua
 
 - [0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE)
 - [Playlist | Revamp Neovim RC](https://www.youtube.com/playlist?list=PLA1PbPOIrviIW6R0dZbLjYyGsRMWH4B3d)

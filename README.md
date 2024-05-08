@@ -27,6 +27,8 @@ Linux:
 
 ## Referências
 
+https://neovim.discourse.group/t/how-to-disable-builtin-plugins/787/6
+
 ### Typecraft
 
 https://github.com/cpow/neovim-for-newbs

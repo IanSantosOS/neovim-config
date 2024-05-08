@@ -1,3 +1,17 @@
+--[[
+-- put every built-in plugin you wanna disable here
+local builtin_plugs = { 
+    '2html_plugin', 
+    'getscript', 
+    'getscriptPlugin', 
+    'gzip', 
+}
+
+for i = 1, #builtin_plugs do 
+  g[ 'loaded_' .. builtin_plugs[i] ] true
+end
+--]]
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 

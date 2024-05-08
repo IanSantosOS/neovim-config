@@ -10,6 +10,7 @@ Package Manager > https://github.com/folke/lazy.nvim
 
 - [Cloak](https://github.com/laytan/cloak.nvim) |> Serve para esconder caracteres no .env
 - [Catppuccin](https://github.com/catppuccin/catppuccin) |> Colores no terminal :)
+- [Lualine](https://nvim-lualine/lualine.nvim) |> Linha de status customizada :)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim) |> Navegação entre arquivos
 - [Harpoon 2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) |> Navegação entre arquivos abertos
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) |> Sintaxe
@@ -28,6 +29,8 @@ Linux:
 ## Referências
 
 https://neovim.discourse.group/t/how-to-disable-builtin-plugins/787/6
+
+https://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
 
 ### Typecraft
 

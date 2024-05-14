@@ -23,3 +23,11 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 -- vim.opt.colorcolumn = '80' -- limite de caracteres
+
+-- Mudar o filetype de arquivos para ajudar o treesitter a reconhecer
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+  pattern = "*.ejs",
+  callback = function()
+    vim.bo.filetype = "html"
+  end,
+})

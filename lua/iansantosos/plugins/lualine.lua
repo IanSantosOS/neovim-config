@@ -30,15 +30,15 @@ custom_catppuccin.normal.c.bg = "#000000"
 ]]
 
 return {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-        require('lualine').setup({
+        require("lualine").setup({
             options = {
                 icons_enabled = true,
-                theme = 'auto',
-                component_separators = '', -- { left = '', right = ''},
-                section_separators = { left='', right='' },
+                theme = "auto",
+                component_separators = "", -- { left = '', right = ''},
+                section_separators = { left = "", right = "" },
                 disabled_filetypes = {
                     statusline = {},
                     winbar = {},
@@ -50,45 +50,45 @@ return {
                     statusline = 1000,
                     tabline = 1000,
                     winbar = 1000,
-                }
+                },
             },
             sections = {
-                lualine_a = { 'mode' },
+                lualine_a = { "mode" },
                 lualine_b = {
                     {
-                        'filetype',
+                        "filetype",
                         icon_only = true,
                         padding = 1,
                     },
-                    {'filename', padding={ left=0, right=1 }}
+                    { "filename", padding = { left = 0, right = 1 } },
                 },
                 lualine_c = {
                     {
-				        "branch",
-				        icon = "",
-			        },
-			        {
-				        "diff",
-				        symbols = { added=" ", modified=" ", removed=" " },
-				        colored = false,
-			        },
-		        },
-                lualine_x = { {'datetime', style='%B %d | %H:%M' } },
-                lualine_y = {'progress'},
-                lualine_z = {'location'}
+                        "branch",
+                        icon = "",
+                    },
+                    {
+                        "diff",
+                        symbols = { added = " ", modified = " ", removed = " " },
+                        colored = false,
+                    },
+                },
+                lualine_x = { { "datetime", style = "%B %d | %H:%M" } },
+                lualine_y = { "progress" },
+                lualine_z = { "location" },
             },
             inactive_sections = {
-                lualine_a = {'filename'},
+                lualine_a = { "filename" },
                 lualine_b = {},
                 lualine_c = {},
                 lualine_x = {},
-                lualine_y = { {'datetime', style='%B %d | %H:%M' } },
-                lualine_z = {'location'}
+                lualine_y = { { "datetime", style = "%B %d | %H:%M" } },
+                lualine_z = { "location" },
             },
             tabline = {},
             winbar = {},
             inactive_winbar = {},
-            extensions = {}
+            extensions = {},
         })
-    end
+    end,
 }

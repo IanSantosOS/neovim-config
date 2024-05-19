@@ -1,3 +1,3 @@
-require('iansantosos.vimset')
-require('iansantosos.remap')
-require('iansantosos.lazy')
+require("iansantosos.vimset")
+require("iansantosos.remap")
+require("iansantosos.lazy")

@@ -2,13 +2,13 @@
 
 return {
     {
-        'theprimeagen/vim-be-good',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+        "theprimeagen/vim-be-good",
+        dependencies = { "nvim-lua/plenary.nvim" },
     },
     {
         "mbbill/undotree",
         config = function()
             vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
-        end
+        end,
     },
 }

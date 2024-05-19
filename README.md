@@ -2,31 +2,44 @@
 
 Repositório Neovim -> https://github.com/neovim/neovim
 
-Lista de configurações e dependências -> https://github.com/nvim-lua/kickstart.nvim
-
 ## TODO
 
-- adicionar neotest para interagir com testes dentro do neovim
-- dar uma olhada nos plugins do tpope
 - arrumar os keymaps
 - adicionar um comentário em cada um dos keymaps criados
-- atualizar a lista de pacotes no README.md
-
-- utilizar nvim junto do tmux
 
 ## Pacotes
 
 Package Manager > https://github.com/folke/lazy.nvim
 
-| Pacotes                                                            | Para que serve                         |
-| ------------------------------------------------------------------ | -------------------------------------- |
-| [Cloak](https://github.com/laytan/cloak.nvim)                      | Serve para esconder caracteres no .env |
-| [Catppuccin](https://github.com/catppuccin/catppuccin)             | Colores no terminal :)                 |
-| [Lualine](https://nvim-lualine/lualine.nvim)                       | Linha de status customizada :)         |
-| [Telescope](https://github.com/nvim-telescope/telescope.nvim)      | Navegação entre arquivos               |
-| [Harpoon 2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) | Navegação entre arquivos guardados     |
-| [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)   | Sintaxe                                |
-| [VimBeGood](https://github.com/ThePrimeagen/vim-be-good)           | Treino para VIM                        |
+| Pacotes                                                                           | Para que serve                                          |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| [Cloak](https://github.com/laytan/cloak.nvim)                                     | Serve para esconder caracteres no .env                  |
+| [Catppuccin](https://github.com/catppuccin/catppuccin)                            | Colores no terminal :)                                  |
+| [Lualine](https://github.com/nvim-lualine/lualine.nvim)                           | Linha de status customizada :)                          |
+| [Telescope](https://github.com/nvim-telescope/telescope.nvim)                     | Navegação entre arquivos                                |
+| [Harpoon 2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)                | Navegação entre arquivos guardados                      |
+| [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)                  | Sintaxe                                                 |
+| [VimBeGood](https://github.com/ThePrimeagen/vim-be-good)                          | Treino para Vim Motions                                 |
+| [Telescope UI Select](https://github.com/nvim-telescope/telescope-ui-select.nvim) | Coisas core do nvim utilizando a interface do Telescope |
+| [Nvim Lspconfig](https://github.com/neovim/nvim-lspconfig)                        | LSP                                                     |
+| [Mason](https://github.com/williamboman/mason.nvim)                               | LSP, DAP, Linter and Formatter Installer                |
+| [Mason LSP Config](https://github.com/williamboman/mason-lspconfig.nvim)          | LSP                                                     |
+| [None_LS / Null_LS](https://github.com/nvimtools/none-ls.nvim)                    | Linter and Formatter                                    |
+| [Nvim Cmp](https://github.com/hrsh7th/nvim-cmp)                                   | Autocompletion                                          |
+| [L3MON4AD3 LuaSnip](https://github.com/L3MON4D3/LuaSnip)                          | Snippets                                                |
+| [saadparwaiz1 LuaSnip](https://github.com/saadparwaiz1/cmp_luasnip)               | Snippets                                                |
+| [Friendly Snippets](https://github.com/rafamadriz/friendly-snippets)              | Snippets                                                |
+| [Vim-Fugitive](https://github.com/tpope/vim-fugitive)                             | Git commands dentro do Vim                              |
+| [Git Signs](https://github.com/lewis6991/gitsigns.nvim)                           | Git bar signs                                           |
+| [Undotree](https://github.com/mbbill/undotree)                                    | Uma undotree que mostra um histórico de alterações      |
+
+### Pacotes para dar uma olhada depois
+
+- plugins do [Tpope](https://github.com/tpope)
+- neotest -> testes dentro do neovim
+- nvim-tmux-navigation -> nvim + tmux
+- folke/trouble.nvim -> ferramenta para erros no código
+- folke/zen-mode.nvim -> codar no nvim sem distração
 
 ## Diretório
 
@@ -40,25 +53,36 @@ Linux:
 
 ## Referências
 
-https://neovim.discourse.group/t/how-to-disable-builtin-plugins/787/6
+### Websites
 
-https://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
+- [How to disable builtin plugins](https://neovim.discourse.group/t/how-to-disable-builtin-plugins/787/6)
+- [Split windows in neovim](https://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/)
 
-### Typecraft
+### Repositórios
 
-https://github.com/cpow/neovim-for-newbs
+- [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
+- [Shock9616](https://github.com/Shock9616/nvim-config)
+- [Typecraft](https://github.com/cpow/neovim-for-newbs)
+- [TJ DeVries](https://github.com/tjdevries/config.nvim)
+- [ThePrimeagen](https://github.com/ThePrimeagen/init.lua)
+
+### Vídeos
+
+#### Typecraft
 
 - [Playlist | Neovim for Newbs. FREE NEOVIM COURSE](https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn)
 - [Neovim and Git: SOLVED](https://www.youtube.com/watch?v=zOQMwWqdp9w)
+- [My Forever Dev Workflow | Neovim + Tmux](https://www.youtube.com/watch?v=_YaI2vDbk0o)
 
-### Theprimeagen
+#### TJ DeVries
 
-https://github.com/ThePrimeagen/init.lua
+- [The Only Video You Need to Get Started with Neovim](https://www.youtube.com/watch?v=m8C0Cq9Uv9o)
+- [My neovim autocomplete setup: explained](https://www.youtube.com/watch?v=22mrSjknDHI)
+- [I Rewrote My Entire Neovim Config...](https://www.youtube.com/watch?v=kJVqxFnhIuw)
+
+#### Theprimeagen
 
 - [0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE)
-- [Playlist | Revamp Neovim RC](https://www.youtube.com/playlist?list=PLA1PbPOIrviIW6R0dZbLjYyGsRMWH4B3d)
-- [Playlist | Neovim Config - Part 3 -- LSP](https://www.youtube.com/watch?v=MuUrCcvE-Yw)
-
-### Other Neovim Configs
-
-- [Shock9616](https://github.com/Shock9616/nvim-config)
+- [Revamp Neovim RC | Part 1 - Lazy Vim](https://www.youtube.com/watch?v=ZWWxwwUsPNw)
+- [Revamp Neovim RC | Part 2 - Awesome Remaps and Restructuring Lazy Vim](https://www.youtube.com/watch?v=c0Xmd4PGino)
+- [Revamp Neovim RC | Part 3 - LSP](https://www.youtube.com/watch?v=MuUrCcvE-Yw)

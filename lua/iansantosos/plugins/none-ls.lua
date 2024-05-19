@@ -8,6 +8,7 @@ return {
                 null_ls.builtins.formatting.stylua,
             },
         })
+
         vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format, {})
     end,
 }

@@ -1,5 +1,4 @@
---[[
--- Custom Lualine component to show attached language server
+-- Shock9616: Custom Lualine component to show attached language server
 local clients_lsp = function()
     local bufnr = vim.api.nvim_get_current_buf()
 
@@ -12,22 +11,8 @@ local clients_lsp = function()
     for _, client in pairs(clients) do
         table.insert(c, client.name)
     end
-    return " " .. table.concat(c, "|")
+    return "  " .. table.concat(c, "|")
 end
-
-local custom_catppuccin = require("lualine.themes.catppuccin")
-
--- Custom colours
-custom_catppuccin.normal.b.fg = "#cad3f5"
-custom_catppuccin.insert.b.fg = "#cad3f5"
-custom_catppuccin.visual.b.fg = "#cad3f5"
-custom_catppuccin.replace.b.fg = "#cad3f5"
-custom_catppuccin.command.b.fg = "#cad3f5"
-custom_catppuccin.inactive.b.fg = "#cad3f5"
-
-custom_catppuccin.normal.c.fg = "#6e738d"
-custom_catppuccin.normal.c.bg = "#000000"
-]]
 
 return {
     "nvim-lualine/lualine.nvim",
@@ -38,7 +23,7 @@ return {
                 icons_enabled = true,
                 theme = "auto",
                 component_separators = "", -- { left = '', right = ''},
-                section_separators = { left = "", right = "" },
+                section_separators = { left = "", right = "" },
                 disabled_filetypes = {
                     statusline = {},
                     winbar = {},
@@ -74,7 +59,7 @@ return {
                     },
                 },
                 lualine_x = { { "datetime", style = "%B %d | %H:%M" } },
-                lualine_y = { "progress" },
+                lualine_y = { { clients_lsp, draw_empty = true } },
                 lualine_z = { "location" },
             },
             inactive_sections = {

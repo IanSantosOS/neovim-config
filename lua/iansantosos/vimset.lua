@@ -12,7 +12,7 @@ for i = 1, #builtin_plugs do
 end
 --]]
 
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
@@ -24,10 +24,19 @@ vim.opt.smartindent = true
 
 -- vim.opt.colorcolumn = '80' -- limite de caracteres
 
--- Mudar o filetype de arquivos para ajudar o treesitter a reconhecer
+-- Mudar o filetype do EJS para HTML
 vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
   pattern = "*.ejs",
   callback = function()
     vim.bo.filetype = "html"
   end,
+})
+
+-- Highlight quando está copiando (yanking) o texto
+vim.api.nvim_create_autocmd('TextYankPost', {
+    desc = 'Hightlight when yanking (copying) text',
+    group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
+    callback = function()
+        vim.highlight.on_yank()
+    end,
 })

@@ -12,30 +12,51 @@ for i = 1, #builtin_plugs do
 end
 --]]
 
-vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.compatible = false        -- Desative o modo de compatibilidade com o VI
 
--- vim.opt.scrolloff = 8
--- vim.opt.colorcolumn = '80' -- limite de caracteres
-vim.opt.signcolumn = "yes"
+vim.opt.termguicolors = true      -- Permite o uso de cores 24-bit
+vim.opt.updatetime = 50           --
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.g.netrw_banner = 0            -- Desativa o banner do netrw
+vim.g.netrw_altv = 1              -- Arquivos abertos usando "v" irão abrir a direita do netrw
+-- vim.cmd('set path+=**')        -- Procura recursivamente dentro do diretório atual
 
-vim.opt.smartindent = true
+vim.opt.splitbelow = true         -- Define a criação de paineis (janelas, window, panels) para baixo
+vim.opt.splitright = true         -- Define a criação de paineis (janelas, window, panels) para a direita
 
-vim.opt.wrap = false
+vim.opt.syntax = "on"             -- Ativa a syntax padrão do nvim
+vim.opt.fileencoding = "utf-8"    -- Padrão UTF-8
 
-vim.opt.incsearch = true
+vim.opt.number = true             -- Ativa a coluna de números do lado esquerdo
+vim.opt.relativenumber = true     -- Ativa o relative number
+vim.opt.signcolumn = "yes"        -- Sempre exibir um espaço do lado esquerdo da coluna de números para marcadores visuais
+-- vim.opt.colorcolumn = '80'     -- Uma coluna visual para delimitar a quantidade de caracteres
 
-vim.opt.termguicolors = true
+vim.opt.wrap = false              --
+vim.opt.scrolloff = 8             --
+vim.opt.sidescrolloff = 8         --
 
-vim.opt.updatetime = 50
+vim.opt.tabstop = 4               -- Define que 1 Tab = 4 Espaços
+vim.opt.softtabstop = 0           -- Os espaços inseridos quando aperta Tab ou BaskSpace será o mesmo do tabstop
+vim.opt.shiftwidth = 4            -- Espaços inseridos ao utilizar a tecla de recuo
+vim.opt.expandtab = true          -- Transforma Tab em Espaços
+vim.opt.smartindent = true        -- Indentação inteligente
 
-vim.opt.swapfile = false
-vim.opt.backup = false
+vim.opt.smartcase = true          --
+vim.opt.ignorecase = true         --
+vim.opt.incsearch = true          --
+
+vim.opt.showcmd = true            -- Mostrar a linha de comando (":q" por exemplo)
+vim.opt.cmdheight = 1             -- Tamanho da linha de comando
+vim.opt.showmode = false          -- Não mostrar o mode [Normal, Visual, Insert] dentro do cmd
+
+vim.opt.laststatus = 2            -- Sempre mostrar a linha de status
+
+vim.o.wildmenu = true             -- Mostrar um menu de opções na linha de comando quando clicar Tab
+
+vim.opt.swapfile = false          --
+vim.opt.backup = false            --
+vim.opt.undofile = true           --
 
 -- Decide onde colocará a pasta de undodir
 if vim.fn.has("win32") == 1 then
@@ -43,8 +64,6 @@ if vim.fn.has("win32") == 1 then
 else
     vim.opt.undodir = vim.fn.expand("$HOME") .. "/.vim/undodir"
 end
-
-vim.opt.undofile = true
 
 -- Mudar o filetype do EJS para HTML
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {

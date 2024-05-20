@@ -65,8 +65,13 @@ Linux:
 - [Typecraft](https://github.com/cpow/neovim-for-newbs)
 - [TJ DeVries](https://github.com/tjdevries/config.nvim)
 - [ThePrimeagen](https://github.com/ThePrimeagen/init.lua)
+- [Linux Dabler](https://gitlab.com/linuxdabbler/dotfiles/-/blob/main/.config/nvim/init.lua)
 
 ### Vídeos
+
+#### Linux Dabbler
+
+- [Pluginless Neovim](https://www.youtube.com/watch?v=I5kT2c2XX38)
 
 #### Typecraft
 

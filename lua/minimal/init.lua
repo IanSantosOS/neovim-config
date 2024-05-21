@@ -1,17 +1,9 @@
---[[
--- put every built-in plugin you wanna disable here
-local builtin_plugs = {
-    '2html_plugin',
-    'getscript',
-    'getscriptPlugin',
-    'gzip',
-}
+-- Basicamente uma config do neovim com nenhum ou poucos plugins
+-- Como o Neovim é o meu principal grande parte dessas configurações eu utilizo mais no VIM que é o meu secundário
 
-for i = 1, #builtin_plugs do
-  g[ 'loaded_' .. builtin_plugs[i] ] true
-end
---]]
+--[ [ VIMSET ] ]--
 
+vim.cmd('colorscheme slate')      -- Altera o coloscheme do neovim
 
 vim.opt.compatible = false        -- Desative o modo de compatibilidade com o VI
 
@@ -85,3 +77,64 @@ vim.api.nvim_create_autocmd("TextYankPost", {
         vim.highlight.on_yank()
     end,
 })
+
+
+--[ [ KEYMAPS ] ]--
+
+vim.g.mapleader = " "
+
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open Netrw tree" })
+
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")  -- Mover a linha atual para baixo
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")  -- Mover a linha atual para cima
+
+vim.keymap.set("n", "<C-k>", ":wincmd k<CR>") -- Mover para o painel/janela de cima
+vim.keymap.set("n", "<C-j>", ":wincmd j<CR>") -- Mover para o painel/janela de baixo
+vim.keymap.set("n", "<C-h>", ":wincmd h<CR>") -- Mover para o painel/janela da esquerda
+vim.keymap.set("n", "<C-l>", ":wincmd l<CR>") -- Mover para o painel/janela da direita
+
+--[ [ STATUSLINE ] ]--
+--[[
+vim.api.nvim_set_hl('StatusMode',     { guifg = 'none',    guibg = 'none',    gui = 'bold' })
+vim.api.nvim_set_hl('StatusType',     { guifg = '#1d2021', guibg = '#b16286', gui = 'none' })
+vim.api.nvim_set_hl('StatusFile',     { guifg = '#1d2021', guibg = '#fabd2f', gui = 'none' })
+vim.api.nvim_set_hl('StatusModified', { guifg = '#d3869b', guibg = '#1d2021', gui = 'none' })
+vim.api.nvim_set_hl('StatusBuffer',   { guifg = '#1d2021', guibg = '#98971a', gui = 'none' })
+vim.api.nvim_set_hl('StatusLocation', { guifg = '#1d2021', guibg = '#458588', gui = 'none' })
+vim.api.nvim_set_hl('StatusPercent',  { guifg = '#ebdbb2', guibg = '#1d2021', gui = 'none' })
+vim.api.nvim_set_hl('StatusNorm',     { guifg = '#ffffff', guibg = 'none',    gui = 'none' })
+
+vim.opt.statusline = table.concat({
+    "",
+    " ",
+    "%l",
+    " ",
+    -- " %#StatusType#",
+    "  ",
+    " ",
+    "%Y",
+    "  ",
+    -- "%#StatusFile#",
+    "<< ",
+    "%F",
+    " >>",
+    -- "%#StatusModified#",
+    " ",
+    "%m",
+    " ",
+    -- "%#StatusNorm#",
+    "%=",
+    -- "%#StatusBuffer#",
+    "<< ",
+    "%n",
+    " >>",
+    -- "%#StatusLocation#",
+    "<< ",
+    "%l,%c",
+    " >>",
+    -- "%#StatusPercent#",
+    "<< ",
+    "%p%%  ",
+    " >> "
+})
+-- ]]

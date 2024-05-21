@@ -1,1 +1,2 @@
-require("iansantosos")
+-- require("iansantosos")
+require("minimal")

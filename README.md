@@ -14,7 +14,9 @@ Package Manager > https://github.com/folke/lazy.nvim
 | Pacotes                                                                           | Para que serve                                          |
 | --------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | [Cloak](https://github.com/laytan/cloak.nvim)                                     | Serve para esconder caracteres no .env                  |
-| [Catppuccin](https://github.com/catppuccin/catppuccin)                            | Colores no terminal :)                                  |
+| [Catppuccin](https://github.com/catppuccin/catppuccin)                            | Colorscheme Theme :)                                    |
+| [Bamboo](https://github.com/ribru17/bamboo.nvim)                                  | Colorscheme Theme :)                                    |
+| [Gruvbox](https://github.com/ellisonleao/gruvbox.nvim)                            | Colorscheme Theme :)                                    |
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim)                           | Linha de status customizada :)                          |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim)                     | Navegação entre arquivos                                |
 | [Harpoon 2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)                | Navegação entre arquivos guardados                      |
@@ -24,7 +26,6 @@ Package Manager > https://github.com/folke/lazy.nvim
 | [Nvim Lspconfig](https://github.com/neovim/nvim-lspconfig)                        | LSP                                                     |
 | [Mason](https://github.com/williamboman/mason.nvim)                               | LSP, DAP, Linter and Formatter Installer                |
 | [Mason LSP Config](https://github.com/williamboman/mason-lspconfig.nvim)          | LSP                                                     |
-| [None_LS / Null_LS](https://github.com/nvimtools/none-ls.nvim)                    | Linter and Formatter                                    |
 | [Nvim Cmp](https://github.com/hrsh7th/nvim-cmp)                                   | Autocompletion                                          |
 | [L3MON4AD3 LuaSnip](https://github.com/L3MON4D3/LuaSnip)                          | Snippets                                                |
 | [saadparwaiz1 LuaSnip](https://github.com/saadparwaiz1/cmp_luasnip)               | Snippets                                                |
@@ -40,6 +41,8 @@ Package Manager > https://github.com/folke/lazy.nvim
 - nvim-tmux-navigation -> nvim + tmux
 - folke/trouble.nvim -> ferramenta para erros no código
 - folke/zen-mode.nvim -> codar no nvim sem distração
+- m4xshen/hardtime.nvim -> desabilita certas funções para tirar seus mals habitos no neovim
+- tris203/precognition.nvim -> mostra dicas de navegação
 
 ## Diretório
 
@@ -61,6 +64,7 @@ Linux:
 ### Repositórios
 
 - [Kickstart](https://github.com/nvim-lua/kickstart.nvim)
+- [Nvim Starter Kit](https://github.com/bcampolo/nvim-starter-kit)
 - [Shock9616](https://github.com/Shock9616/nvim-config)
 - [Typecraft](https://github.com/cpow/neovim-for-newbs)
 - [TJ DeVries](https://github.com/tjdevries/config.nvim)
@@ -68,6 +72,10 @@ Linux:
 - [Linux Dabler](https://gitlab.com/linuxdabbler/dotfiles/-/blob/main/.config/nvim/init.lua)
 
 ### Vídeos
+
+### Nerd Signals
+
+- [Fix Your BAD Vim Habits - Neovim Plugin Spotlight - Hardtime + Precognition](https://www.youtube.com/watch?v=7hQZhHve4HI)
 
 #### Linux Dabbler
 

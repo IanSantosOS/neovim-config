@@ -6,6 +6,7 @@ Repositório Neovim -> https://github.com/neovim/neovim
 
 - arrumar os keymaps
 - adicionar um comentário em cada um dos keymaps criados
+- mudar o tipo de dropdown do telescope no current_buff
 
 ## Pacotes
 
@@ -26,6 +27,7 @@ Package Manager > https://github.com/folke/lazy.nvim
 | [Nvim Lspconfig](https://github.com/neovim/nvim-lspconfig)                        | LSP                                                     |
 | [Mason](https://github.com/williamboman/mason.nvim)                               | LSP, DAP, Linter and Formatter Installer                |
 | [Mason LSP Config](https://github.com/williamboman/mason-lspconfig.nvim)          | LSP                                                     |
+| [None LS / Null LS](https://github.com/nvimtools/none-ls.nvim)                    | Linter and Formatter                                    |
 | [Nvim Cmp](https://github.com/hrsh7th/nvim-cmp)                                   | Autocompletion                                          |
 | [L3MON4AD3 LuaSnip](https://github.com/L3MON4D3/LuaSnip)                          | Snippets                                                |
 | [saadparwaiz1 LuaSnip](https://github.com/saadparwaiz1/cmp_luasnip)               | Snippets                                                |
@@ -44,7 +46,13 @@ Package Manager > https://github.com/folke/lazy.nvim
 - m4xshen/hardtime.nvim -> desabilita certas funções para tirar seus mals habitos no neovim
 - tris203/precognition.nvim -> mostra dicas de navegação
 
-## Diretório
+## Setup
+
+### Comando
+
+    git clone https://github.com/IanSantosOS/neovim-config.git neovim
+
+### Diretório
 
 Windows:
 
@@ -73,7 +81,7 @@ Linux:
 
 ### Vídeos
 
-### Nerd Signals
+#### Nerd Signals
 
 - [Fix Your BAD Vim Habits - Neovim Plugin Spotlight - Hardtime + Precognition](https://www.youtube.com/watch?v=7hQZhHve4HI)
 

@@ -11,12 +11,13 @@ local clients_lsp = function()
     for _, client in pairs(clients) do
         table.insert(c, client.name)
     end
-    return " " .. table.concat(c, "|")
+    return "  " .. table.concat(c, "|")
 end
 
 return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+    lazy = false,
     config = function()
         require("lualine").setup({
             options = {
@@ -43,20 +44,13 @@ return {
                     {
                         "filetype",
                         icon_only = true,
-                        padding = 1,
+                        padding = { left = 1, right = 0 },
                     },
                     { "filename", padding = { left = 0, right = 1 } },
                 },
                 lualine_c = {
-                    {
-                        "branch",
-                        icon = "",
-                    },
-                    {
-                        "diff",
-                        symbols = { added = " ", modified = " ", removed = " " },
-                        colored = false,
-                    },
+                    { "branch", icon = "" },
+                    { "diff", colored = false },
                 },
                 lualine_x = { { "datetime", style = "%B %d | %H:%M" } },
                 lualine_y = { { clients_lsp, draw_empty = true } },

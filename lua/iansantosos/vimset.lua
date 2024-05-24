@@ -12,7 +12,6 @@ for i = 1, #builtin_plugs do
 end
 --]]
 
-
 vim.opt.compatible = false        -- Desative o modo de compatibilidade com o VI
 
 vim.opt.termguicolors = true      -- Permite o uso de cores 24-bit

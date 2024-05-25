@@ -1,6 +1,6 @@
 # NeoVim Config
 
-Repositório Neovim -> https://github.com/neovim/neovim
+Repositório Neovim -> <https://github.com/neovim/neovim>
 
 ## TODO
 
@@ -10,7 +10,7 @@ Repositório Neovim -> https://github.com/neovim/neovim
 
 ## Pacotes
 
-Package Manager > https://github.com/folke/lazy.nvim
+Package Manager > <https://github.com/folke/lazy.nvim>
 
 | Pacotes                                                                           | Para que serve                                          |
 | --------------------------------------------------------------------------------- | ------------------------------------------------------- |
@@ -50,7 +50,7 @@ Package Manager > https://github.com/folke/lazy.nvim
 
 ### Comando
 
-    git clone https://github.com/IanSantosOS/neovim-config.git neovim
+    git clone https://github.com/IanSantosOS/neovim-config.git nvim
 
 ### Diretório
 

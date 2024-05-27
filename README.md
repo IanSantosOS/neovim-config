@@ -15,9 +15,9 @@ Package Manager > <https://github.com/folke/lazy.nvim>
 | Pacotes                                                                           | Para que serve                                          |
 | --------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | [Cloak](https://github.com/laytan/cloak.nvim)                                     | Serve para esconder caracteres no .env                  |
-| [Catppuccin](https://github.com/catppuccin/catppuccin)                            | Colorscheme Theme :)                                    |
 | [Bamboo](https://github.com/ribru17/bamboo.nvim)                                  | Colorscheme Theme :)                                    |
-| [Gruvbox](https://github.com/ellisonleao/gruvbox.nvim)                            | Colorscheme Theme :)                                    |
+| [Rose Pine](https://github.com/rose-pine/neovim)                                  | Colorscheme Theme :)                                    |
+| [Catppuccin](https://github.com/catppuccin/catppuccin)                            | Colorscheme Theme :)                                    |
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim)                           | Linha de status customizada :)                          |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim)                     | Navegação entre arquivos                                |
 | [Harpoon 2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)                | Navegação entre arquivos guardados                      |

@@ -8,6 +8,11 @@ Repositório Neovim -> <https://github.com/neovim/neovim>
 - adicionar um comentário em cada um dos keymaps criados
 - mudar o tipo de dropdown do telescope no current_buff
 
+- fazer 4 tipos de configs:
+    - Padrão -> a configuração que utilizo na minha máquina pessoal
+    - Minimal -> apenas as configurações que julgo necessárias
+    - VimLike -> Mesma configuração do meu VIM porém em lua
+
 ## Pacotes
 
 Package Manager > <https://github.com/folke/lazy.nvim>

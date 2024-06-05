@@ -10,7 +10,7 @@ return {
                 style = "vulgaris", -- Choose between 'vulgaris' (regular), 'multiplex' (greener), and 'light'
                 toggle_style_key = nil, -- Keybind to toggle theme style. Leave it nil to disable it, or set it to a string, e.g. "<leader>ts"
                 toggle_style_list = { "vulgaris", "multiplex", "light" }, -- List of styles to toggle between
-                transparent = false, -- Show/hide background
+                transparent = true, -- Show/hide background
                 dim_inactive = false, -- Dim inactive windows/buffers
                 term_colors = true, -- Change terminal color as per the selected theme style
                 ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
@@ -50,7 +50,7 @@ return {
                 variant = "moon",
                 styles = {
                     italic = false,
-                    transparency = false
+                    transparency = true
                 },
             })
 
@@ -67,7 +67,7 @@ return {
                     light = "latte",
                     dark = "mocha",
                 },
-                transparent_background = false,
+                transparent_background = true,
                 show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
                 term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
                 dim_inactive = {

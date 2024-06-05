@@ -61,7 +61,7 @@ vim.opt.undofile = true           -- Habilita a gravação de histórico de edi�
 
 -- Decide onde colocará a pasta de undodir que foi habilitada pelo "undofile"
 if vim.fn.has("win32") == 1 then
-    vim.opt.undodir = vim.fn.expand("$HOME") .. "/AppData/Local/nvim/undodir"
+    vim.opt.undodir = vim.fn.expand("$HOME") .. "/AppData/Local/nvim-data/undodir"
 else
     vim.opt.undodir = vim.fn.expand("$HOME") .. "/.vim/undodir"
 end

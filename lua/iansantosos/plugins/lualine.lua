@@ -2,7 +2,7 @@
 local clients_lsp = function()
     local bufnr = vim.api.nvim_get_current_buf()
 
-    local clients = vim.lsp.buf_get_clients(bufnr) -- Don't change, breaks the function
+    local clients = vim.lsp.get_clients({bufnr})
     if next(clients) == nil then
         return ""
     end
@@ -11,7 +11,7 @@ local clients_lsp = function()
     for _, client in pairs(clients) do
         table.insert(c, client.name)
     end
-    return "  " .. table.concat(c, "|")
+    return " " .. table.concat(c, " | ")
 end
 
 return {
@@ -23,8 +23,8 @@ return {
             options = {
                 icons_enabled = true,
                 theme = "auto",
-                component_separators = "", -- { left = '', right = ''},
-                section_separators = { left = "", right = "" },
+                component_separators = "",
+                section_separators = "",
                 disabled_filetypes = {
                     statusline = {},
                     winbar = {},
@@ -46,13 +46,24 @@ return {
                         icon_only = true,
                         padding = { left = 1, right = 0 },
                     },
-                    { "filename", padding = { left = 0, right = 1 } },
+                    {
+                        "filename",
+                        path = 1, -- (0. Just the filename), (1. Relative path), (4. Filename and parent dir)
+                        padding = { left = 0, right = 1 }
+                    },
                 },
                 lualine_c = {
-                    { "branch", icon = "" },
-                    { "diff", colored = false },
+                    {
+                        "branch",
+                        icon = "",
+                        padding = { left = 1, right = 0 }
+                    },
+                    {
+                        "diff",
+                        colored = false
+                    },
                 },
-                lualine_x = { { "datetime", style = "%B %d | %H:%M" } },
+                lualine_x = {},
                 lualine_y = { { clients_lsp, draw_empty = true } },
                 lualine_z = { "location" },
             },
@@ -61,7 +72,7 @@ return {
                 lualine_b = {},
                 lualine_c = {},
                 lualine_x = {},
-                lualine_y = { { "datetime", style = "%B %d | %H:%M" } },
+                lualine_y = {},
                 lualine_z = { "location" },
             },
             tabline = {},

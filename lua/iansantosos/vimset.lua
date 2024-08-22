@@ -30,7 +30,7 @@ vim.opt.fileencoding = "utf-8"    -- Padrão UTF-8
 vim.opt.number = true             -- Ativa a coluna de números do lado esquerdo
 vim.opt.relativenumber = true     -- Ativa o relative number
 vim.opt.signcolumn = "yes"        -- Sempre exibir um espaço do lado esquerdo da coluna de números para marcadores visuais
--- vim.opt.colorcolumn = '80'     -- Uma coluna visual para delimitar a quantidade de caracteres
+vim.opt.colorcolumn = '80'        -- Uma coluna visual para delimitar a quantidade de caracteres
 
 vim.opt.wrap = false              -- Desativa a quebra de linha automática
 vim.opt.scrolloff = 8             -- Distância para ativar a rolagem vertical do texto
@@ -40,8 +40,10 @@ vim.opt.tabstop = 4               -- Define que 1 Tab = 4 Espaços
 vim.opt.softtabstop = 0           -- Os espaços inseridos quando aperta Tab ou BaskSpace será o mesmo do tabstop
 vim.opt.shiftwidth = 4            -- Espaços inseridos ao utilizar a tecla de recuo
 vim.opt.expandtab = true          -- Transforma Tab em Espaços
+
+-- vim.opt.autoindent = true      -- Indentação automática
 vim.opt.smartindent = true        -- Indentação inteligente
--- vim.opt.cindent = true         -- Indentação C automática
+vim.opt.cindent = true            -- Indentação C automática
 
 vim.opt.smartcase = true          -- Respeita maiúsculas/minúsculas se houver letras maiúsculas na busca.
 vim.opt.ignorecase = true         -- Ignora maiúsculas/minúsculas em buscas

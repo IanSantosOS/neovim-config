@@ -21,7 +21,8 @@ return {
         vim.keymap.set('n', '<leader>b', builtin.buffers, {})
 
         vim.keymap.set('n', '<leader>sc', function() builtin.colorscheme(dropdown) end, {})
-        vim.keymap.set('n', '<leader>sh', function() builtin.current_buffer_fuzzy_find(dropdown) end, {})
+        vim.keymap.set('n', '<leader>sf', function() builtin.current_buffer_fuzzy_find(dropdown) end, {})
+        vim.keymap.set('n', '<leader>sk', builtin.keymaps, {})
 
         require('telescope').load_extension('ui-select')
     end

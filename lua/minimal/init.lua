@@ -1,5 +1,5 @@
 -- Basicamente uma config do neovim com nenhum ou poucos plugins
--- Como o Neovim é o meu principal grande parte dessas configurações eu utilizo mais no VIM que é o meu secundário
+-- Como o Neovim é o meu principal, grande parte dessas configurações eu utilizo mais no VIM que é o meu secundário
 
 --[ [ VIMSET ] ]--
 
@@ -33,7 +33,10 @@ vim.opt.tabstop = 4               -- Define que 1 Tab = 4 Espaços
 vim.opt.softtabstop = 0           -- Os espaços inseridos quando aperta Tab ou BaskSpace será o mesmo do tabstop
 vim.opt.shiftwidth = 4            -- Espaços inseridos ao utilizar a tecla de recuo
 vim.opt.expandtab = true          -- Transforma Tab em Espaços
+
+-- vim.opt.autoindent = true      -- Indentação automática
 vim.opt.smartindent = true        -- Indentação inteligente
+vim.opt.cindent = true            -- Indentação C automática
 
 vim.opt.smartcase = true          -- Respeita maiúsculas/minúsculas se houver letras maiúsculas na busca.
 vim.opt.ignorecase = true         -- Ignora maiúsculas/minúsculas em buscas
@@ -54,7 +57,7 @@ vim.opt.undofile = true           -- Habilita a gravação de histórico de edi�
 
 -- Decide onde colocará a pasta de undodir que foi habilitada pelo "undofile"
 if vim.fn.has("win32") == 1 then
-    vim.opt.undodir = vim.fn.expand("$HOME") .. "/AppData/Local/nvim/undodir"
+    vim.opt.undodir = vim.fn.expand("$HOME") .. "/AppData/Local/nvim-data/undodir"
 else
     vim.opt.undodir = vim.fn.expand("$HOME") .. "/.vim/undodir"
 end
